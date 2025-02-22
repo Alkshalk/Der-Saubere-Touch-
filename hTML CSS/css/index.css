@@ -1,0 +1,308 @@
+div.top-img{
+    position: relative;
+    height: 100vh;
+    background-image: url(../images/hom.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+@media(width <1000px){
+    div.top-imp {
+        background-position: left;
+    }
+}
+
+
+
+
+
+
+
+section.content {
+    font-size: 2vw;
+    position: relative; /* استخدام relative بدلًا من absolute */
+    padding: 2vw 3vw;
+    top: 55%;
+    transform: translateY(-50%);
+    margin-left: 10%;
+}
+
+section.content .lifestyle {
+    text-transform: uppercase;
+    color: hsl(60, 7%, 3%);
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+section.content .Ihr {
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    margin-top: 1rem;
+    font-weight: bold;
+    color: hsl(192, 76%, 43%);
+}
+
+section.content .Reinigungsservice {
+    color: hwb(0 0% 100%);
+    font-size: 1.9rem;
+    margin-block: 1rem;
+    font-weight: bold;
+}
+
+section.content .Sorgfalt {
+    text-transform: uppercase;
+    font-size: 1.7rem;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+
+section.content .Sorgfalt span {
+    color: hsl(192, 76%, 43%);
+    font-size: 2vw;
+}
+
+section.content button {
+    background-color: hsl(192, 76%, 43%);
+    color: rgb(234, 233, 232);
+    margin-top: 1.5rem;
+    font-size: 1.5rem;
+    border-radius: 3px;
+    padding: 1.5rem 1.5rem;
+    font-weight: bold;
+}
+
+
+@media (max-width: 600px) {
+    section.content {
+        font-size: 3rem; /* يمكن ضبط الحجم بشكل مختلف */
+    }
+}
+
+
+
+
+
+
+
+main h1.unsere {
+    margin: 1rem 1rem 1rem 2rem;
+    color: #bcdfda;
+    font-weight: bold;
+    background-color: hsl(192, 76%, 43%);
+    /* min-height: 500px;  */
+    /* height: 500px;  */
+    border-radius: 50px; 
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 8px -2px,
+                rgba(0, 0, 0, 0.15) 0px 6px 10px 0px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease-in-out;
+    overflow: hidden; 
+    display: flex;
+    
+    flex-direction: column; 
+    align-items: center;
+    justify-content: space-between;
+    margin: 5px;
+    padding: 0.3rem;
+    margin: auto;
+    gap: 1px; 
+
+
+
+    
+}
+
+ 
+
+
+
+
+
+
+
+
+
+@media (max-width: 600px) {
+    main h1.unsere {
+        margin: 2.3rem 0 2rem 0;
+        font-size: 1.4rem;
+    }
+}
+
+
+
+
+
+@media (max-width: 600px) {
+    section.content {
+        font-size: 0.9rem; /* تقليص حجم الخط على الشاشات الصغيرة */
+        margin-left: 5%;
+        top: 45%; /* تعديل مكان المحتوى حسب الحجم */
+    }
+
+    .lifestyle, .Ihr, .Reinigungsservice, .Sorgfalt {
+        font-size: 1.2rem;
+    }
+
+    button {
+        padding: 1rem 1rem;
+        font-size: 1.2rem;
+    }
+}
+
+
+
+
+
+/* تنسيق المنتجات */
+ main .section.Products.flex {
+    display: flex;
+    flex-wrap: wrap; /* السماح بالالتفاف إلى صفين */
+    justify-content: center; /* توسيط البطاقات */
+    margin: 55px 55px;
+
+    max-width: 1200px; /* عرض الحاوية لاحتواء صفين فقط */
+    margin: auto; /* توسيط الصفحة */
+     padding: 2rem 1rem; /* إضافة تباعد داخلي */
+     max-width: 1200px;
+     margin: auto;
+     padding: 2rem 1rem;
+    } 
+
+/* تنسيق البطاقة */
+article.card {
+    
+    flex: 1 1 calc(33.333% - 3rem); /* يجعل 3 بطاقات في الصف على الشاشات الكبيرة */
+    max-width: 800px; /* تحديد الحد الأقصى للعرض */
+    min-height: 500px; 
+    height: 500px; /* تحديد ارتفاع موحد */
+    border-radius: 50px; /* زيادة التدوير لجعل الشكل أكثر نعومة */
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 8px -2px,
+                rgba(0, 0, 0, 0.15) 0px 6px 10px 0px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease-in-out;
+    background-color: hsl(192, 76%, 43%); /* إضافة خلفية بيضاء */
+    overflow: hidden; /* إخفاء أي شيء يتجاوز حدود البطاقة */
+    display: flex;
+    
+    flex-direction: column; /* جعل المحتوى عمودياً */
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px;
+    padding: 2rem;
+    margin: auto;
+    padding: 1rem 1rem 35rem;
+    gap: 10px;
+   
+}
+
+/* التأثير عند التمرير */
+article.card:hover {
+    transform: scale(1.05);
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 6px 12px -2px,
+                rgba(0, 0, 0, 0.2) 0px 8px 14px 0px;
+}
+
+/* تنسيق الصورة */
+img {
+    width: 100rem;
+    height: auto;
+    object-fit: cover; /* يجعل الصورة تغطي الحاوية بدون تشويه */
+    padding: 10px -10px;
+    border-radius: 40px; /* لجعل الزوايا ناعمة */
+    display: block; /* يجعل الصورة عنصر بلوك حتى يتم توسيطه */
+    max-width: 325px;
+  
+    margin: 0 auto; /* توسيط الصورة في الحاوية */
+}
+
+
+/* تنسيق المحتوى داخل البطاقة */
+.card .content {
+    padding: 10px 10px;
+    text-align: center;
+    flex-grow: 1;
+    
+   
+}
+
+/* تنسيق العنوان */
+.card .content .title {
+    font-size: 1.5rem;
+    color: #000000;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+    padding: 1px 1px; /* مسافة من الجوانب */
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
+    background-color: hsl(192, 76%, 43%);
+    width: auto;
+    margin: auto;
+    
+}
+
+/* تنسيق الوصف */
+.card .content .description {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #232b2e;
+    line-height: 1.5rem;
+    word-spacing: 0.1rem; 
+    text-align: left;
+    margin: auto;
+
+    padding: 10px 10px; /* يضيف مسافة من جميع الجهات */
+    text-transform: uppercase;
+    width: auto; /* يجعل النص لا يشغل العرض بالكامل، بل يترك مسافة */
+    margin: auto; /* توسيط العنصر داخل الحاوية */
+    background-color: hsl(192, 76%, 43%); /* لون خلفي خفيف */
+    word-wrap: break-word;
+    /* text-align: justify; */
+    border-radius: 10px; /* زوايا ناعمة */
+}
+
+
+
+
+.fa-solid  {
+    color: #122427; 
+}
+
+/* جعل التصميم متجاوبًا مع الشاشات الصغيرة */
+@media (max-width: 1024px) {
+    article.card {
+        flex: 1 1 calc(50% - 1rem);
+    }
+}
+
+@media (max-width: 768px) {
+    article.card {
+        flex: 1 1 100%; /* بطاقة واحدة في كل صف */
+    }
+}
+
+
+
+.Products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+@media (max-width: 1000px) {
+    div.top-img {
+        background-position: left;
+    }
+}
+
+
+
+
